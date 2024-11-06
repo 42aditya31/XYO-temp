@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myXYO Landing Page</title>
+    <link rel="stylesheet" href="navtech_style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'sm': '320px',
+                        // => @media (min-width: 640px) { ... }
+
+                    'md': '768px',
+                    // => @media (min-width: 768px) { ... }
+
+                    'lg': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'xl': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+
+                    '2xl': '1536px',
+                    // => @media (min-width: 1536px) { ... }
+                }
+            },
+        }
+    </script>
+</head>
+<body class="text-gray-900 bg-[#e0f1f0]">
+
+    <!-- Hero Section with Background Image -->
+    <section class="flex flex-col">
+        <div class="up-content lg:w-full h-1/2 sm:py-3 lg:bg-cover lg:py-14">
+            <br class="text-[#17398f] leading-3">
+                <span class="title1 text-[#17398f] font-bold md:pl-5 md:text-5xl lg:text-7xl sm:text-3xl sm:pl-2 sm:text-2xl">Unlock Your Child's Full</span><br>
+                <span  class="title2 text-[#17398f] font-bold md:pl-5 md:text-5xl lg:text-7xl sm:text-3xl sm:pl-2 leading-5 sm:text-2xl">Math Potential!</span><br><br>
+                <span id="slogan" class="text-[#813b40] lg:text-4xl lg:pb-10 lg:pl-5 md:text-2xl md:pl-5 font-medium sm:pl-2">Making Maths Happen Happily!!</span>
+            </h2>
+        </div>
+        <div class="down-content w-full h-1/2 flex lg:flex-row sm:flex-col items-center p-10 sm:p-8">
+            <div class="w-[40%] flex justify-center sm:w-[80%]">
+                <img src="/images/main_image.jpg" alt="" class="sm:h-auto sm:w-auto sm:pb-10 sm:pt-5 sm:scale-125 lg:scale-95">
+            </div>
+            <div id="down-content-text" class="w-full">
+                <p class="text-[#17398f] font-medium lg:text-justify sm:text-center md:pl-7 lg:text-2xl lg:leading-relaxed">
+                    We help students in Grades 1 to 10 excel in Maths. Whether they need confidence in school Maths or aim for 
+                    Olympiad ranks, we handhold them through their journey. Our approach is a combination of technology and 
+                    live online teaching by well trained experienced teachers. Success in Maths is not only possible but 
+                    guaranteed at XYO. 
+                </p>
+            </div>
+        </div>
+        <div class="collage_image flex w-auto p-5 lg:pb-16 lg:scale-90 justify-center">
+            <img src="/images/collage.png" class="collage_img lg:rounded-3xl sm:rounded-lg" alt="">
+        </div>
+    </section>
+    
+
+    
+
+    <!-- Slider Section -->
+    <section class="w-full h-screen bg-[#c6e0de] flex flex-col lg:flex-row items-center justify-center">
+        <div class="container mx-auto bg-[#c6e0de] px-6 mb-5 flex flex-col lg:flex-row items-center justify-between h-full">
+            <!-- Left Side: Text -->
+            <div class="lg:w-1/2 lg:pl-10 lg:pr-4 sm:text-center">
+                <h1 class="text-[#17398f] text-4xl lg:text-left lg:text-4xl font-Actor lg:font-bold sm:font-bold sm:text-3xl sm:pt-5 leading-tight">
+                    Five Reasons to choose XYO
+                </h1>
+    
+                <!-- Slider content -->
+                <div id="slider" class="mb-8">
+                    <div class="slide-fade-in-right">
+                        <p id="slider-number" class="font-Roboto invisible text-xl lg:text-left lg:text-2xl font-semibold">01</p>
+                        <h2 id="subheading" class="text-[#813b40] lg:pr-3 lg:text-left font-Roboto text-2xl lg:text-3xl font-semibold sm:text-2xl mb-3">
+                            Your Subheading
+                        </h2>
+                        <p id="description" class="font-Roboto lg:font-medium lg:text-left lg:pr-5 font-medium lg:text-lg mb-12 sm:mb-7 sm:text-xl leading-relaxed">
+                            Your description here...
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Navigation Buttons -->
+                <!-- <div class="flex bg-[#c6e0de] justify-center lg:justify-start space-x-4 sm:space-x-6">
+                    <button id="prev" class="px-4 py-4 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white rounded-full shadow-lg transform transition-all duration-300 ease-in-out lg:hover:-translate-y-1 lg:hover:scale-110">
+                        <span class="inline-block transform rotate-90">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                            </svg>
+                        </span>
+                    </button>
+                    <button id="next" class="px-4 py-4 bg-gradient-to-l from-green-500 to-yellow-500 hover:from-green-600 hover:to-yellow-600 text-white rounded-full shadow-lg transform transition-all duration-300 ease-in-out lg:hover:-translate-y-1 lg:hover:scale-110">
+                        <span class="inline-block transform -rotate-90">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                            </svg>
+                        </span>
+                    </button>
+                </div> -->
+                <div class="flex bg-[#c6e0de] justify-center lg:justify-start space-x-6 sm:space-x-8">
+                    <button id="prev" class="flex items-center justify-center w-12 h-12 bg-white border-2 border-[#5a9ca8] text-[#5a9ca8] rounded-full shadow-md transform transition-all duration-200 ease-in-out hover:bg-[#5a9ca8] hover:text-white hover:shadow-lg active:scale-110 focus:bg-[#5a9ca8] focus:text-white">
+                        <span class="inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </span>
+                    </button>
+                    <button id="next" class="flex items-center justify-center w-12 h-12 bg-white border-2 border-[#5a9ca8] text-[#5a9ca8] rounded-full shadow-md transform transition-all duration-200 ease-in-out hover:bg-[#5a9ca8] hover:text-white hover:shadow-lg active:scale-110 focus:bg-[#5a9ca8] focus:text-white">
+                        <span class="inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                                                                         
+            </div>
+    
+            <!-- Right Side: Image -->
+            <div class="lg:w-[60%] lg:scale-100 bg-transparent lg:h-full sm:w-full sm:h-full flex lg:justify-end sm:mt-5 sm:scale-125 lg:mt-0">
+                <div id="image-container" class="lg:w-full lg:h-full sm:w-full sm:h-full bg-no-repeat bg-contain bg-center transition-all duration-200"></div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+<!-- Form Section -->
+<section id="form-section" class="w-full py-12 bg-[#e0f1f0] flex sm:items-center justify-center">
+    <div class="text-[#813b40] container mx-auto lg:px-6 flex lg:flex-row sm:flex-col items-center justify-between">
+        <!-- Left Side: Form -->
+        <div class="lg:w-1/2 lg:pr-12">
+            <h2 class="text-[#17398f] text-4xl font-semibold lg:ml-10 lg:pb-5 sm:text-center lg:text-left sm:pb-4 sm:pt-4">Get in Touch</h2>
+            <h2 class="text-[#17398f] text-2xl font-semibold lg:ml-10 lg:pt-0 lg:mt-0 sm:text-center lg:text-left sm:pb-8 sm:pt-0">✆ 9901558900</h2>
+            <form method="post" name="contact-form" action="https://script.google.com/macros/s/AKfycbw_rUP7jfdzgkpi1f6n07t4Neo28Yh79WZUN6bVbApd77M_rlUekyfRKR4OCVGObKZU/exec" id="contactForm"   class="bg-white font-Actor sm:p-8 lg:p-10 lg:ml-10 shadow-lg rounded-lg transition-all duration-300" novalidate>
+                <div class="mb-6">
+                    <label for="childName" class="block text-lg font-medium mb-2">Name of the Child:</label>
+                    <input type="text" name="child-name"  id="childName" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all" placeholder="Enter your child's name" required>
+                    <p id="nameError" class="text-red-500 text-sm mt-1 hidden">Please enter your child's name.</p>
+                </div>
+
+                <div class="mb-6">
+                    <label for="childClass" class="block text-lg font-medium mb-2">Class of Child:</label>
+                    <input type="number" name="child-class" id="childClass" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all" placeholder="Enter the class (1-10)" min="1" max="10" required>
+                    <p id="classError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid class (1-10).</p>
+                </div>
+
+                <div class="mb-6">
+                    <label for="email" class="block text-lg font-medium mb-2">Email:</label>
+                    <input type="email" id="email" name="email-id" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all" placeholder="Enter your email" required>
+                    <p id="emailError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid email address.</p>
+                </div>
+
+                <div class="mb-6">
+                    <label for="boards" class="block text-lg font-medium mb-2">Boards:</label>
+                    <select id="boards"  name="board-name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all" required>
+                        <option value="" disabled selected>Select a board</option>
+                        <option value="ICSE">ICSE</option>
+                        <option value="CBSE">CBSE</option>
+                        <option value="State">State</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <p id="boardsError" class="text-red-500 text-sm mt-1 hidden">Please select a board.</p>
+                </div>
+
+                <div class="mb-6">
+                    <label for="contactNumber" class="block text-lg font-medium mb-2">WhatsApp Contact Number:</label>
+                    <input type="tel" name="whatsapp-number" id="contactNumber" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all" placeholder="Enter WhatsApp contact number" pattern="[0-9]{10}" required>
+                    <p id="numberError" class="text-red-500 text-sm mt-1 hidden">Please enter a valid 10-digit contact number.</p>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-lg font-medium mb-2">We would like to schedule a:</label>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <input type="radio" id="call" name="schedule" value="Call" class="text-[#17398f] h-5 w-5 border-gray-300 focus:ring-2 focus:ring-blue-500 transition">
+                            <label for="call" class="ml-2 text-lg">Call</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="demo" name="schedule" value="Demo" class="text-[#17398f] h-5 w-5 border-gray-300 focus:ring-2 focus:ring-blue-500 transition">
+                            <label for="demo" class="ml-2 text-lg">Demo</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="class" name="schedule" value="Free 1 hour Class" class="text-[#17398f] h-5 w-5 border-gray-300 focus:ring-2 focus:ring-blue-500 transition">
+                            <label for="class" class="ml-2 text-lg">Free 1 hour Class</label>
+                        </div>
+                    </div>
+                    <p id="scheduleError" class="text-red-500 text-sm mt-1 hidden">Please select an option.</p>
+                </div>
+
+                <button type="submit" value="submit" id="submit" class="w-full bg-[#17398f] text-white px-4 py-2 rounded-md hover:bg-blue-500 focus:ring-2 focus:ring-blue-600">Submit</button>
+            </form>
+        </div>
+
+        <!-- Right Side: Text Content -->
+        <div class="lg:w-1/2 mt-12 lg:mt-0">
+            <h2 id="form-right-text" class="bt_text text-[#17398f] font-bold lg:text-3xl mb-6 lg:text-left sm:px-7 sm:text-center sm:text-2xl">Ready to Transform Your Child's Math Journey?</h2>
+            <p class="font-Roboto text-justify lg:text-left lg:font-normal sm:font-normal text-xl sm:text-center sm:text-xl sm:px-7 leading-relaxed">
+                Discover the difference with myXYO and take the first step toward a brighter future in Maths!
+                Whether it’s excelling in the classroom, preparing for exams, or boosting confidence in problem-solving, we’re here to help.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="w-full bg-[#e0f1f0] py-5">
+    <div class="container mx-auto text-center">
+        <h2 class="text-[#17398f] text-xl font-semibold mb-4">Follow Us On</h2>
+        <div class="flex justify-center space-x-6 pb-10">
+            <!-- Facebook Icon -->
+            <a href="https://www.facebook.com/XyoOlympiad" target="_blank" class="text-[#3b5998] hover:text-blue-600">
+                <!-- <i class="fab fa-facebook-f fa-2x"></i> -->
+                <img src="/Icon/facebook.png" class="h-16" alt="">
+            </a>
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com/xyomaths/" target="_blank" class="text-[#813b40] hover:text-pink-600">
+                <img src="/Icon/instagram.png" class="h-16" alt="">
+            </a>
+            <!-- LinkedIn Icon -->
+            <a href="https://www.linkedin.com/company/myxyo-com" target="_blank" class="text-[#0077b5] hover:text-blue-700">
+                <img src="/Icon/linkedin.png" class="h-16" alt="">
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<script src="navtech_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: #e0f1f0;
+}
+
+.title1 {
+    font-family: "Actor", sans-serif;
+}
+
+.title2 {
+    font-family: "Actor", sans-serif;
+}
+
+.bt_text {
+    font-family: "Actor", sans-serif;
+}
+
+/* Hero Section Styling */
+.up-content {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.491)),
+                url("/images/CoverImage.jpg");
+    /* height: auto;
+    width: auto; */
+    /* padding-top: 20px;
+    padding-bottom: 40px; */
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 320px) {
+    .up-content {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.491)),
+                    url("/images/CoverImage.jpg");
+        /* height: auto;
+        width: auto; */
+        /* padding-top: 20px;
+        padding-bottom: 40px; */
+        background-size:100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+/* section div span {
+    font-family: "Actor", sans-serif;
+    line-height: 1.3rem;
+} */
+
+/* #slogan {
+    font-family: "Actor", sans-serif;
+    padding-bottom: 40px;
+} */
+
+
+/* @media (min-width: 768px) {
+    .up-content h2 {
+        font-size: 4rem;
+    }
+    #math-potential {
+        font-size: 3rem;
+        word-spacing: 0.5rem;
+    }
+
+    #slogan {
+        font-size: 2.5rem;
+        word-spacing: 0.2rem;
+    }
+} */
+
+/* @media (min-width: 1024px) {
+    .up-content h2 {
+        font-size: 6rem;
+        word-spacing: 0.5rem;
+        padding-top: 42px;
+        padding-left: 20px;
+    }
+    #math-potential {
+        font-size: 6rem;
+        word-spacing: 0.5rem;
+    }
+
+
+    #slogan {
+        font-size: 1.5rem;
+        word-spacing: 0.1rem;
+    }
+} */
+
+/* Down Content Section */
+/* .down-content {
+    display: flex;
+    flex-direction: row; 
+    line-height: 1.2;
+} */
+
+/* .down-content img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    padding: 50px;
+}  */
+
+/* .down-content p {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}  */
+
+/* @media (min-width: 450px) {
+    .down-content div:nth-child(1) {
+        width: 50%;
+    }
+
+    .down-content div img {
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .down-content p {
+        font-size: 30px;
+        text-align: justify;
+        margin-top: 7px;
+        padding: 7px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .down-content p {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    .down-content div img {
+        padding: 10px;
+        margin: 0px;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        padding: 50px;
+    }
+} */
+
+/* Responsive Layout for Screens Smaller Than Tablet (Mobile) */
+/* @media (max-width: 768px) {
+    .down-content {
+        flex-direction: column; 
+        align-items: center;    
+    }
+
+    .down-content img {
+        margin-bottom: 20px; 
+    }
+
+    .down-content p {
+        text-align: center;
+        font-size: 16px;
+        padding: 0 20px; 
+    }
+} */
+
+/* Slider Section */
+/* #image-container {
+    background-size: auto;
+    background-position: center;
+    height: 70vh;
+} */
+
+/* @media (min-width: 768px) {
+    #image-container {
+        height: 60vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    #image-container {
+        height: 80vh;
+    }
+} */
+
+/* Form Section */
+/* #form-section h2 {
+    font-size: 30px;
+    font-weight: 700;
+} */
+
+/* @media (min-width: 768px) {
+     #form-section h2 {
+        font-size: 2.5rem;
+    } 
+} */
+
+button:hover {
+    transform: translateY(-2px);
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+/* Slider Animations */
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(100px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes fadeSlideOut {
+    0% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100px) scale(0.9);
+    }
+}
+
+.fadeIn {
+    animation: fadeSlideIn 0.5s ease-in-out forwards;
+}
+
+.fadeOut {
+    animation: fadeSlideOut 0.5s ease-in-out forwards;
+}
